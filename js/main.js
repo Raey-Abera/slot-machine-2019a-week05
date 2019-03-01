@@ -13,10 +13,12 @@ document.getElementById('minBet').addEventListener('click', function(){
 
   // conditional to upadate total values
   let results = checkMatch(reel1, reel2, reel3)
-  if(results==='winner!'){
+  if(results==='You win, keepy playing!'){
     total = total + 25;
   }else{
     total = total - 1;
+
+// document.getElementById('result').innerHTML= "Money bet: " + total;
 
   }
 
@@ -36,7 +38,7 @@ document.getElementById('maxBet').addEventListener("click", function(){
 
   // conditional to upadate total values
   let results = checkMatch(reel1, reel2, reel3)
-  if(results==='winner!'){
+  if(results==='You win, keepy playing!!'){
     total = total + 100;
   }else{
     total = total - 50;
@@ -81,9 +83,9 @@ function randomReel(){
 //compare reels to check winner/loser
 function checkMatch(a, b, c){
   if (a == b && b == c){
-    return 'winner!';
+    return 'You win, keepy playing!';
   }else{
-    return 'loser!'
+    return 'You lose, keep trying!'
   }
 
 }

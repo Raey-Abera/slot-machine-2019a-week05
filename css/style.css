@@ -1,0 +1,28 @@
+body{
+  background-color: black;
+  color:white;
+  font-size: 25px;
+}
+img{
+  margin-left:32%;
+}
+
+section > section{
+  margin-left:42%;
+}
+span{
+  margin-left: 10%;
+}
+
+#result{
+  margin-left:37%;
+
+}
+#response{
+margin-left:37%;
+}
+
+section > section + section{
+  margin-top: 30px;
+  margin-left: 30%;
+}
